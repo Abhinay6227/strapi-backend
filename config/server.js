@@ -8,4 +8,4 @@ module.exports = ({ env }) => ({
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
 });
-console.log('ALL ENV VARS AT STARTUP:', process.env);
+
