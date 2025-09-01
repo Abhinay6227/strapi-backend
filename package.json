@@ -4,28 +4,20 @@
   "private": true,
   "description": "A Strapi application",
   "scripts": {
-    
     "console": "strapi console",
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
-    "start": "node server.js",
+    "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry",
-
-   
-  "build": "echo $STRAPI_ADMIN_BACKEND_URL && strapi build"
-  
-
-
-    
+    "build": "strapi build"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.17.0",
     "@strapi/plugin-users-permissions": "5.17.0",
     "@strapi/strapi": "5.17.0",
-    "mysql": "^2.18.1",
     "mysql2": "3.9.8",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
